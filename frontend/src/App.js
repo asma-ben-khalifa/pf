@@ -4,12 +4,15 @@ import Navbar from './componenets/Navbar';
 import Cart from './componenets/Cart';
 import Home from './componenets/Home';
 import NotFound from './componenets/NotFound';
- 
+import "react-toastify/dist/ReactToastify.css";
+import {ToastContainer} from "react-toastify"
+
 
 function App() {
   return (
     <div className="App">
      <BrowserRouter>
+     <ToastContainer />
      <Navbar/>
      <Routes>
        <Route path="/cart" exact element={<Cart/>}/>

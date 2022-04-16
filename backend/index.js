@@ -32,6 +32,6 @@ app.post("/single",upload.single("image"),(req,res)=>{
     res.send("single upolad")
 })
 
-const port = process.env.PORT || 3003
+const port = process.env.PORT || 3005
 app.listen(port, console.log(`server runing on port ${port}`)
 )
